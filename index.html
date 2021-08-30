@@ -28,7 +28,13 @@
     .simple-form div {
       margin-bottom: 10px;
     }
+
+    div {
+      margin: 10px 0;
+    }
   </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 </head>
 <body>
   <div class="container">
@@ -46,6 +52,25 @@
         <input type="submit" value="Subscribe!">
       </div>
     </form>
+    <div>
+      <div>
+        <label>
+          This is a text input, where the input will be format on `input`
+          <input id="text-input" />
+        </label>
+      </div>
+      <div>
+        <label>
+          This is a number input, nothing happens here
+          <input type="number"/>
+        </label>
+      </div>
+      <div>
+          This is a textarea
+          <textarea rows="25"></textarea>
+      </div>
+    </div>
   </div>
-  <script async src="//api.beta.salemove.com/salemove_integration.js"></script>
+  <script async src="https://api.beta.salemove.com/salemove_integration.js"></script>
+  <script src="index.js"></script>
 </body>
